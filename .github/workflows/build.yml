@@ -72,8 +72,8 @@ jobs:
       - name: Send Telegram Notification on New Release
         uses: cbrgm/telegram-github-action@v1
         with:
-          token: AAEQgE_YIUg53bV7rH0JZ32g9qhmUSTozwk
-          to: 6467693141
+          token: "AAEQgE_YIUg53bV7rH0JZ32g9qhmUSTozwk"
+          to: "6467693141"
           message: |
             🚀 New Release Published!
             Release Name: ${{ github.event.release.name }}
