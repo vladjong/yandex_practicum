@@ -69,15 +69,15 @@ jobs:
   notify-on-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Telegram Notification on New Release
-        uses: cbrgm/telegram-github-action@v1
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
         with:
+          to: 918767122
           token: 6467693141:AAEQgE_YIUg53bV7rH0JZ32g9qhmUSTozwk
-          to: 6467693141
           message: |
-            🚀 New Release Published!
-            Release Name: ${{ github.event.release.name }}
-            Tag: ${{ github.event.release.tag_name }}
-            Actor: ${{ github.actor }}
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
             Repository: ${{ github.repository }}
-            Check it out: ${{ github.event.release.html_url }}j
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
