@@ -65,3 +65,19 @@ jobs:
           token: ${{secrets.CODECOV_TOKEN}}
           file: ./coverage.txt
           fail_ci_if_error: false
+
+  notify-on-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram Notification on New Release
+        uses: cbrgm/telegram-github-action@v1
+        with:
+          token: AAEQgE_YIUg53bV7rH0JZ32g9qhmUSTozwk
+          to: 6467693141
+          message: |
+            🚀 New Release Published!
+            Release Name: ${{ github.event.release.name }}
+            Tag: ${{ github.event.release.tag_name }}
+            Actor: ${{ github.actor }}
+            Repository: ${{ github.repository }}
+            Check it out: ${{ github.event.release.html_url }}j
