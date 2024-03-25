@@ -43,7 +43,7 @@ jobs:
         run: go generate ./... && git diff --exit-code
 
       - name: Go Build
-        run: go build -o main.go ./...
+        run: go build -o project main.go
 
       - name: Go Compile Tests
         if: ${{ inputs.skipTests }}
