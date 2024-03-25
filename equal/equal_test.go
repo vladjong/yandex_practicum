@@ -31,7 +31,7 @@ func TestEqual(t *testing.T) {
 		{
 			name: "temp",
 			args: args{
-				a: 1,
+				a: 10,
 				b: 10,
 			},
 			want: true,
