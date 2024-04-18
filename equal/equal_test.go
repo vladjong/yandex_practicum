@@ -12,7 +12,16 @@ func TestEqual(t *testing.T) {
 		args args
 		want bool
 	}{
-		// TODO: Add test cases.
+		{
+			name: "ok_false",
+			args: args{a: 10, b: 5},
+			want: false,
+		},
+		{
+			name: "pk_true",
+			args: args{a: 10, b: 10},
+			want: true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

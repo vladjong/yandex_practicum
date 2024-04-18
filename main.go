@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Test")
 	var wg sync.WaitGroup
 	wg.Add(5)
 
