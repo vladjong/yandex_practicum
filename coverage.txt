@@ -1,0 +1,13 @@
+mode: atomic
+github.com/vladjong/yandex_practicum/main.go:9.13,17.27 5 0
+github.com/vladjong/yandex_practicum/main.go:17.27,18.13 1 0
+github.com/vladjong/yandex_practicum/main.go:18.13,24.4 5 0
+github.com/vladjong/yandex_practicum/main.go:26.2,27.32 2 0
+github.com/vladjong/yandex_practicum/race/race.go:8.13,15.27 5 1
+github.com/vladjong/yandex_practicum/race/race.go:15.27,16.13 1 15
+github.com/vladjong/yandex_practicum/race/race.go:16.13,22.4 5 15
+github.com/vladjong/yandex_practicum/race/race.go:24.2,24.11 1 1
+github.com/vladjong/yandex_practicum/equal/equal.go:3.27,5.2 1 2
+github.com/vladjong/yandex_practicum/max/max.go:3.27,4.12 1 2
+github.com/vladjong/yandex_practicum/max/max.go:4.12,6.3 1 1
+github.com/vladjong/yandex_practicum/max/max.go:7.2,7.10 1 1

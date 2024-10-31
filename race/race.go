@@ -1,13 +1,11 @@
-package main
+package race
 
 import (
-	"fmt"
 	"runtime"
 	"sync"
 )
 
-func main() {
-
+func Race() {
 	counter := 0
 
 	const num = 15
@@ -24,5 +22,4 @@ func main() {
 		}()
 	}
 	wg.Wait()
-	fmt.Println("count:", counter)
 }
